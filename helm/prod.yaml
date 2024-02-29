@@ -1,6 +1,7 @@
 component: user
 service_type: ClusterIP
 port: 8080
+env: prod
 PARAMETERS: "user.prod.MONGO_URL,MONGO_URL user.prod.DOCUMENTDB,DOCUMENTDB user.prod.REDIS_HOST,REDIS_HOST"
 schema:
   enabled: true
