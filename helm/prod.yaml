@@ -7,3 +7,4 @@ PARAMETERS_ENABLED: true
 PARAMETERS: "user.prod.DOCUMENTDB,DOCUMENTDB user.prod.MONGO_URL,MONGO_URL user.prod.REDIS_HOST,REDIS_HOST"
 schema_type: DOCDB
 schema_enabled: true
+env: prod
