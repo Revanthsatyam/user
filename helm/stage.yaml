@@ -1,0 +1,18 @@
+component: user-stage
+service_type: ClusterIP
+port: 80
+container_port: 8080
+target_port: 8080
+PARAMETERS_ENABLED: true
+PARAMETERS: "user.stage.DOCUMENTDB,DOCUMENTDB user.stage.MONGO_URL,MONGO_URL user.stage.REDIS_HOST,REDIS_HOST"
+schema_type: DOCDB
+schema_enabled: true
+env: stage
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 500Mi
+  requests:
+    cpu: 500m
+    memory: 500Mi
